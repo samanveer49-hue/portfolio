@@ -22,9 +22,9 @@
 	},
 	"scripts": {
 		"postinstall": "node scripts/patch-postcss.js",
-		"start": "react-scripts start",
-		"build": "node scripts/patch-postcss.js && react-scripts build",
-		"test": "react-scripts test",
+		"start": "react-scripts --openssl-legacy-provider start",
+		"build": "node scripts/patch-postcss.js && react-scripts --openssl-legacy-provider build",
+		"test": "react-scripts --openssl-legacy-provider test",
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
